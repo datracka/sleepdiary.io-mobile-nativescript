@@ -1,0 +1,59 @@
+{
+  "name": "sleepdiary.io",
+  "descripion": "mobile app of sleepdiary.io",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/datracka/sleepdiary.io-mobile"
+  },
+  "keywords": [
+    "sleepdiary"
+  ],
+  "author": "Vicens Fayos <datracka@gmail.com> (http://vicensfayos.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/datracka/sleepdiary.io-mobile/issues"
+  },
+  "homepage": "https://github.com/datracka/sleepdiary.io-mobile",
+  "scripts": {
+    "start.android": "tns emulate android",
+    "start.ios": "tns emulate ios",
+    "livesync.android": "tns livesync android --emulator --watch",
+    "livesync.ios": "tns livesync ios --emulator --watch",
+    "postintall": "cd app && typings install"
+  },
+  "nativescript": {
+    "id": "org.nativescript.sleepdiaryiomobile",
+    "tns-android": {
+      "version": "2.3.0"
+    },
+    "tns-ios": {
+      "version": "2.3.0"
+    }
+  },
+  "dependencies": {
+    "@angular/common": "2.0.0",
+    "@angular/compiler": "2.0.0",
+    "@angular/core": "2.0.0",
+    "@angular/http": "2.0.0",
+    "@angular/platform-browser": "2.0.0",
+    "@angular/platform-browser-dynamic": "2.0.0",
+    "@angular/platform-server": "2.0.0",
+    "@angular/router": "3.0.0",
+    "nativescript-angular": "1.0.0",
+    "angular2-jwt": "0.1.24",
+    "reflect-metadata": "0.1.8",
+    "rxjs": "5.0.0-beta.12",
+    "tns-core-modules": "2.3.0"
+  },
+  "devDependencies": {
+    "babel-traverse": "6.7.6",
+    "babel-types": "6.7.7",
+    "babylon": "6.7.0",
+    "filewalker": "0.1.2",
+    "lazy": "1.0.11",
+    "nativescript-dev-typescript": "^0.3.2",
+    "typescript": "^1.8.10",
+    "zone.js": "0.6.21"
+  }
+}
