@@ -1,6 +1,6 @@
 {
   "name": "sleepdiary.io",
-  "descripion": "mobile app of sleepdiary.io",
+  "description": "mobile app of sleepdiary.io",
   "version": "1.0.0",
   "repository": {
     "type": "git",
