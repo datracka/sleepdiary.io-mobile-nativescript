@@ -16,9 +16,9 @@
   },
   "homepage": "https://github.com/datracka/sleepdiary.io-mobile",
   "scripts": {
-    "start.android": "tns emulate android",
+    "start.android": "WEBPACK_OPTS='--display-error-details' tns run android --bundle",
     "start.ios": "tns emulate ios",
-    "livesync.android": "tns livesync android --emulator --watch",
+    "livesync.android": "WEBPACK_OPTS='--display-error-details' tns livesync android --bundle",
     "livesync.ios": "tns livesync ios --emulator --watch",
     "postintall": "cd app && typings install"
   },
@@ -53,7 +53,9 @@
     "filewalker": "0.1.2",
     "lazy": "1.0.11",
     "nativescript-dev-typescript": "^0.3.2",
+    "nativescript-dev-webpack": "0.0.20",
     "typescript": "^1.8.10",
+    "webpack": "^1.13.2",
     "zone.js": "0.6.21"
   }
 }

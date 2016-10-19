@@ -4,6 +4,7 @@ import {contentHeaders} from '../common/headers';
 import {Observable} from "rxjs/Rx";
 import {AuthHttp} from 'angular2-jwt';
 
+
 @Injectable()
 export class CalendarService {
 

@@ -7,3 +7,6 @@ tmp/
 typings/
 .vscode/
 .idea/
+npm-debug.log
+
+!tns-java-classes.js
