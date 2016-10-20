@@ -1,13 +1,13 @@
 import { Component } from "@angular/core";
 
+import { setStatusBarColors } from "./utils/status-bar-util";
+
 @Component({
-  selector: "my-app",
-  template: "<Label text='hello Nacho'></Label>"
+    selector: "main",
+    template: "<page-router-outlet></page-router-outlet>"
 })
 export class AppComponent {
     constructor() {
-        console.log('######');
-        console.log(BASE_URL);
-        console.log('#######');
+        setStatusBarColors();
     }
 }

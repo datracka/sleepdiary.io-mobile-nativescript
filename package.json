@@ -16,18 +16,16 @@
   },
   "homepage": "https://github.com/datracka/sleepdiary.io-mobile",
   "scripts": {
+    "clean": "node_modules/rimraf/bin.js ./app/**/*.js &&  node_modules/rimraf/bin.js ./app/**/.map.js && npm cache clean",
     "start.android": "WEBPACK_OPTS='--display-error-details' tns run android --bundle",
     "start.ios": "tns emulate ios",
-    "livesync.android": "WEBPACK_OPTS='--display-error-details' tns livesync android --bundle",
+    "livesync.android": "npm run clean && WEBPACK_OPTS='--display-error-details' tns livesync android --bundle",
     "livesync.ios": "tns livesync ios --emulator --watch",
     "postintall": "cd app && typings install"
   },
   "nativescript": {
     "id": "org.nativescript.sleepdiaryiomobile",
     "tns-android": {
-      "version": "2.3.0"
-    },
-    "tns-ios": {
       "version": "2.3.0"
     }
   },
@@ -54,6 +52,7 @@
     "lazy": "1.0.11",
     "nativescript-dev-typescript": "^0.3.2",
     "nativescript-dev-webpack": "0.0.20",
+    "rimraf": "^2.5.4",
     "typescript": "^1.8.10",
     "webpack": "^1.13.2",
     "zone.js": "0.6.21"
