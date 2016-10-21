@@ -18,9 +18,9 @@
   "scripts": {
     "clean": "node_modules/rimraf/bin.js ./app/**/*.js &&  node_modules/rimraf/bin.js ./app/**/.map.js && npm cache clean",
     "start.android": "WEBPACK_OPTS='--display-error-details' tns run android --bundle",
-    "start.ios": "tns emulate ios",
-    "livesync.android": "npm run clean && WEBPACK_OPTS='--display-error-details' tns livesync android --bundle",
-    "livesync.ios": "tns livesync ios --emulator --watch",
+    "start.ios": "WEBPACK_OPTS='--display-error-details' tns emulate ios --bundle",
+    "livesync.android": "WEBPACK_OPTS='--display-error-details' tns livesync android --bundle --watch",
+    "livesync.ios": "WEBPACK_OPTS='--display-error-details' tns livesync ios --emulator --bundle --watch",
     "postintall": "cd app && typings install"
   },
   "nativescript": {

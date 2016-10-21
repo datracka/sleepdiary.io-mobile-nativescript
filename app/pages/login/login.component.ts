@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 //https://github.com/NativeScript/nativescript-cli/issues/943
-//let template = require('./login.html');
+
 @Component({
     selector: "my-app",
     template: `
@@ -11,11 +11,15 @@ import { Component } from "@angular/core";
         <TextField hint="Password" secure="true"></TextField>
     
         <Button text="Sign in"></Button>
-        <Button text="Sign in" class="submit-button"></Button>
+        <Button text="Sign in" class="submit-button" (tap)="submit()></Button>
     </StackLayout>`
     ,
     styleUrls: ["pages/login/login-common.css", "pages/login/login.css"]
 })
 export class LoginComponent {
     constructor() {}
+
+    submit() {
+        console.log("Vicens");
+    }
 }
